@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rxjava-reactive-streams-1.2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/rxjava-reactive-streams-1.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

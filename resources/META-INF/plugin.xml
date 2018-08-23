@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.noober.plugin.tiny</id>
+    <name>TinyCompress</name>
+    <version>1.0</version>
+    <vendor email="812817883@qq.com" url="https://github.com/JavaNoober">JavaNoober</vendor>
+
+    <description><![CDATA[
+      a plugin to compress images
+    ]]></description>
+
+    <change-notes><![CDATA[
+      1.0:第一版
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="173.0"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="com.noober.plugin.tiny" class="com.noober.plugin.tiny.CompressAction" text="TinyCompress"
+                description="a plugin to compress images">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="ReplaceInPath"/>
+            <add-to-group group-id="FileMenu" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
