@@ -1,15 +1,16 @@
 <idea-plugin>
     <id>com.noober.plugin.tiny</id>
     <name>TinyCompress</name>
-    <version>1.0</version>
+    <version>1.2</version>
     <vendor email="812817883@qq.com" url="https://github.com/JavaNoober">JavaNoober</vendor>
 
     <description><![CDATA[
-      a plugin to compress images
+      你只需要右击drawable文件夹或者右击图片选择TinyCompress，即可自动使用tinyPng压缩图片，压缩前请输入key（可以在https://tinypng.com/dashboard/api中注册获得），
+                如果不填则将使用默认的key（由于被公用可能被使用完）
     ]]></description>
 
     <change-notes><![CDATA[
-      1.0:第一版
+      增加自己的key功能
     ]]>
     </change-notes>
 
