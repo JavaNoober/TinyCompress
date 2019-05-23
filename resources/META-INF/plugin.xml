@@ -5,12 +5,13 @@
     <vendor email="812817883@qq.com" url="https://github.com/JavaNoober">JavaNoober</vendor>
 
     <description><![CDATA[
-      你只需要右击drawable文件夹或者右击图片选择TinyCompress，即可自动使用tinyPng压缩图片，压缩前请输入key（可以在https://tinypng.com/dashboard/api中注册获得），
-                如果不填则将使用默认的key（由于被公用可能被使用完）
+      Just right-click on the drawable folder or right-click on the image to select Tiny Compress to automatically use tinyPng to compress the image.
+      Before compression, enter key (which can be registered in https://tinypng.com/dashboard/api).
+      If not, the default key will be used (it may be used up by the public)
     ]]></description>
 
     <change-notes><![CDATA[
-      增加自己的key功能
+      1.Optimizing Compression Tips;2.New function to enter your own key
     ]]>
     </change-notes>
 
