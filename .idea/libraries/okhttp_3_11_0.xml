@@ -2,6 +2,11 @@
   <library name="okhttp-3.11.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/libs/okhttp-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/okio-2.0.0-RC1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/reactive-streams-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/rxjava-2.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/rxjava-reactive-streams-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/tinify-1.6.1-beta.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

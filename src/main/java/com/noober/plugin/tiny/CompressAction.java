@@ -3,7 +3,9 @@ package com.noober.plugin.tiny;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
 import com.intellij.notification.Notifications;
-import com.intellij.openapi.actionSystem.*;
+import com.intellij.openapi.actionSystem.AnAction;
+import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.tinify.AccountException;
@@ -19,7 +21,6 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class CompressAction extends AnAction {
-
     private String groupId = "111";
     private AnActionEvent anActionEvent;
     private JTextField jTextField;
@@ -31,13 +32,10 @@ public class CompressAction extends AnAction {
         anActionEvent = e;
         SampleDialogWrapper startDialog = new SampleDialogWrapper("start compress");
         startDialog.show();
-//                .observeOn(Schedulers.trampoline()).subscribe(aBoolean ->
-//                Messages.showMessageDialog("压缩完成", "TinyCompress", Messages.getInformationIcon()));
-
     }
 
     private VirtualFile[] getSelectFiles(AnActionEvent e) {
-        return DataKeys.VIRTUAL_FILE_ARRAY.getData(e.getDataContext());
+        return CommonDataKeys.VIRTUAL_FILE_ARRAY.getData(e.getDataContext());
     }
 
 
@@ -63,10 +61,8 @@ public class CompressAction extends AnAction {
             super(true);
             this.msg = msg;
             init();
-            getCancelAction().setEnabled(false);
+            getCancelAction().setEnabled(true);
             setTitle("TinyCompress");
-
-
         }
 
         @Nullable
@@ -128,7 +124,7 @@ public class CompressAction extends AnAction {
                                 }
                             }
                             if(result){
-                                Notifications.Bus.notify(new Notification(groupId, "TinyCompress", "compress complete", NotificationType.INFORMATION, null));
+                                Notifications.Bus.notify(new Notification(groupId, "TinyCompress", "Compress complete", NotificationType.INFORMATION, null));
                             }
 
                         });
